@@ -3,6 +3,7 @@
 }
 
 .card-container {
+  background-color: aliceblue;
   margin: 2rem;
   padding: 0.5rem;
 
@@ -28,5 +29,4 @@
 
 .button-flex * {
   border-radius: var(--border-radius);
-
 }

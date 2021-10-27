@@ -16,17 +16,17 @@ The goal is to build an interactive game-like thing that uses data from an API.
 
 ## Criteria
 
-- [ ] Accept some user input (e.g. a username)
-- [ ] Query an API (e.g. the Github API, or any other fun one)
-- [ ] Populate the UI with API data
-- [ ] Have some form of persistent state and interactivity, e.g.
-- [ ] A hunger bar that decreases over time and is topped up when you feed them stars
-- [ ] A button to add more users to your collection
+- [x] Accept some user input (e.g. a username)
+- [x] Query an API (e.g. the Github API, or any other fun one)
+- [x] Populate the UI with API data
+- [x] Have some form of persistent state and interactivity, e.g.
+  - [ ] A hunger bar that decreases over time and is topped up when you feed them stars
+  - [ ] A button to add more users to your collection
 
 ## Stretch criteria
 
-- [ ] Save your state to localstorage so you can leave the page and come back later
-- [ ] Make it look great
+- [x] Save your state to localstorage so you can leave the page and come back later
+- [x] Make it look great 🍓🍓🍓
 
 ## Set up
 

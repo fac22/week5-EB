@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Card from './components/card';
+import SelectCategory from './components/SelectCategory.jsx';
 
 function App2() {
   const [count, setCount] = useState(0);
@@ -43,7 +44,7 @@ function App2() {
 }
 
 function App() {
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState(0);
   const [group, setGroup] = useState();
 
   useEffect(() => {
@@ -55,44 +56,22 @@ function App() {
       });
   }, [category]);
 
-  const groupA = [
-    { id: 1, name: 'George' },
-    { id: 2, name: 'Ariadni' },
-    { id: 3, name: 'Maria' },
-  ];
-
   return (
     <div className="App">
       <header>
         <h1>Like ME!!!</h1>
       </header>
       <main>
-        <form
-          onSubmit={(event) => {
-            event.preventDefault();
-            setCategory(event.target.category.value);
-          }}>
-          <label htmlFor="category">
-            <p>Choose a users theme:</p>
-            <select name="category" id="category">
-              <option value="---">---</option>
-              <option value="1">Robots</option>
-              <option value="2">Monsters</option>
-              <option value="3">Aliens</option>
-              <option value="4">Cats</option>
-            </select>
-          </label>
-          <button type="submit">Go!</button>
-        </form>
+        <SelectCategory category={category}  setCategory={setCategory}/>
 
         <section className="cards">
           <div className="grid">
-            {group ? (
+            {group && category != 0 ? (
               group.map((user) => {
                 return <Card key={user.id} user={user} category={category} />;
               })
             ) : (
-              <p>Loading...</p>
+              <p>PREPARE FOR SHOCK AND AWE.....AND 🍓🍓🍓🍓🍓!!!</p>
             )}
           </div>
         </section>

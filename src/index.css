@@ -10,6 +10,19 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(
+    to left,
+    rgba(202, 16, 59, 0.7) 0%,
+    rgba(197, 152, 4, 0.4) 100%
+  );
+  /* background: repeating-linear-gradient(
+    45deg,
+    rgb(202, 16, 59),
+    #ca103b 1px,
+    #ffffff 3px,
+    #ffffff 8px
+  ); */
 }
 
 code {
