@@ -86,7 +86,7 @@ function App() {
         </form>
 
         <section className="cards">
-          <div>
+          <div className="grid">
             {group ? (
               group.map((user) => {
                 return <Card key={user.id} user={user} category={category} />;

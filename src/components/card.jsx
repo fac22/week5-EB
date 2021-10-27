@@ -1,4 +1,5 @@
 import React from 'react';
+import './card.css';
 
 function Card(props) {
   return (
@@ -9,10 +10,10 @@ function Card(props) {
       />
       <h2>{props.user.name}</h2>
 
-      <div>
-        <button> - 🍓</button>
+      <div className="button-flex">
+        <button>🍓 -</button>
         <p>🍓 Score</p>
-        <button> + 🍓</button>
+        <button>+ 🍓</button>
       </div>
     </div>
   );

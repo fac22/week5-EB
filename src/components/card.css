@@ -1,0 +1,32 @@
+:root {
+  --border-radius: 12px;
+}
+
+.card-container {
+  margin: 2rem;
+  padding: 0.5rem;
+
+  border: 2px solid rgb(29, 29, 27);
+  border-bottom: 3px solid rgb(29, 29, 27);
+  border-radius: 12px;
+  box-shadow: 6px 7px 6px rgba(79, 25, 187, 0.5);
+
+  transition: all 0.3s;
+}
+
+.card-container:hover {
+  box-shadow: 0px 4px 4px 5px rgba(39, 229, 232, 0.5);
+
+  transform: translateY(-3%);
+}
+
+.button-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-flex * {
+  border-radius: var(--border-radius);
+
+}
