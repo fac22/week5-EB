@@ -40,8 +40,15 @@ The goal is to build an interactive game-like thing that uses data from an API.
 ### href in React
 
 - href are automatically relative to server (it thinks it's a sub-route). It's a big topic online!
-  ` <p>My website is <a href={props.user.website}>{props.user.website}</a></p>`
-- This is also not a fix: `<p>My website is <a href="https://{props.user.website}">{props.user.website}</a></p>`
+
+```js
+// These don't work:
+<p>My website is <a href={props.user.website}>{props.user.website}</a></p>
+<p>My website is <a href="https://{props.user.website}">{props.user.website}</a></p>
+
+// This works (Thanks Antonio!!!):
+<p>My website is <a href={`https://${props.user.website}`}>{props.user.website}</a></p>
+```
 
 ### .querySelector or React state?
 

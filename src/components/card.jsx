@@ -47,6 +47,7 @@ function Card(props) {
 
       <div>
         <h2>{props.user.name}</h2>
+        <p>My website <a href={`https://${props.user.website}`}>{props.user.website}</a></p>
         <BerryStatus berry={berry} username={props.user.username} city={props.user.address.city} company={props.user.company.name}/>
       </div>
     </div>
