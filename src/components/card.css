@@ -44,7 +44,7 @@
   backface-visibility: hidden;
   z-index: 5;
   transform: rotateY(180deg);
-  /* margin: 80%; */
+  /* margin-top: -110%; */
 }
 
 .card-container.flipped {
