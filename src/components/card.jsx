@@ -19,6 +19,36 @@ function Card(props) {
     return setBerry(berry - 1)
   }
 
+  function berryStatus(berryV) {
+    if (berryV >= 1 && berryV < 5) {
+      return <p>My nickname is {props.user.username}</p>
+    } else if (berryV >= 5 && berryV < 12) {
+      return (
+        <>
+        <p>My nickname is {props.user.username}</p>
+      <p>I live in {props.user.address.city}</p>
+      </>
+      )
+    } else if (berryV >= 12 && berryV < 20) {
+      return (
+        <>
+        <p>My nickname is {props.user.username}</p>
+        <p>I live in {props.user.address.city}</p>
+        <p>I work at {props.user.company.name}</p>
+        </>
+      )
+    } else if (berryV >= 20) {
+      return (
+        <>
+        <p>My nickname is {props.user.username}</p>
+      <p>I live in {props.user.address.city}</p>
+      <p>I work at {props.user.company.name}</p>
+      <p>We're 🍓🍓🍓 friends now!</p>
+        </>
+      )
+    }
+  }
+
   return (
     <article className="card-container" onClick={event =>{ 
       event.stopPropagation();
@@ -41,7 +71,11 @@ function Card(props) {
     <div className="card card-b">
       <div>
       <h2>{props.user.name}</h2>
-
+      {/* <p>My nickname is {props.user.username}</p>
+      <p>I live in {props.user.address.city}</p>
+      <p>I work at {props.user.company.name}</p>
+      <p>We're friends now 🍓🍓🍓</p> */}
+      {berryStatus(berry)}
       </div>
 
     </div>

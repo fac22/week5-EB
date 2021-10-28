@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Card from './components/card';
-import SelectCategory from './components/SelectCategory.jsx';
+import SelectCategory from './components/select-category.jsx';
 
 function App2() {
   const [count, setCount] = useState(0);

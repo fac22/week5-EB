@@ -31,16 +31,16 @@
   /* display: none; */
   backface-visibility: hidden;
   z-index: 2;
-  /* position: absolute; */
+  position: absolute;
 }
 .card-b {
   /* display: none; */
   backface-visibility: hidden;
   z-index: 5;
   position: relative;
-  /* position: absolute; */
+  position: absolute;
   transform: rotateY(180deg);
-  /* margin: 80%; */
+  /* margin-top: -110%; */
 }
 
 .card-container.flipped {
