@@ -3,6 +3,8 @@
 }
 
 .card-container {
+  height: 305.425px;
+
   background-color: aliceblue;
   margin: 2rem;
   padding: 0.5rem;
@@ -13,12 +15,43 @@
   box-shadow: 6px 7px 6px rgba(79, 25, 187, 0.5);
 
   transition: all 0.3s;
+
+  transform-style: preserve-3d;
+
+  position: relative;
 }
 
 .card-container:hover {
   box-shadow: 0px 4px 4px 5px rgba(39, 229, 232, 0.5);
 
   transform: translateY(-3%);
+}
+
+.card-a {
+  /* display: none; */
+  backface-visibility: hidden;
+  z-index: 2;
+  /* position: absolute; */
+}
+.card-b {
+  /* display: none; */
+  backface-visibility: hidden;
+  z-index: 5;
+  position: relative;
+  /* position: absolute; */
+  transform: rotateY(180deg);
+  /* margin: 80%; */
+}
+
+.card-container.flipped {
+  transform: rotateY(180deg);
+}
+/* .card:hover {
+  transform: rotateY(180deg);
+} */
+
+img {
+  z-index: 2;
 }
 
 .button-flex {
@@ -29,4 +62,8 @@
 
 .button-flex * {
   border-radius: var(--border-radius);
+}
+
+.hidden {
+  display: none;
 }

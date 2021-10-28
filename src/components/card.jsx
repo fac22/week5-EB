@@ -5,7 +5,7 @@ function Card(props) {
   const [berry, setBerry] = useState(0);
 
   useEffect(() => {
-    setBerry(JSON.parse(window.localStorage.getItem(`${props.user.id}${props.category}`)));
+    setBerry(JSON.parse(window.localStorage.getItem(`${props.user.id}`)));
   }, []);
 
   useEffect(() => {
@@ -20,11 +20,16 @@ function Card(props) {
   }
 
   return (
-    <div className="card-container">
+    <article className="card-container" onClick={event =>{ 
+      event.stopPropagation();
+      event.target.classList.toggle('flipped');
+      }}>
+
+    <div className="card card-a">
       <img
         src={`https://robohash.org/${props.user.id}?set=set${props.category}&size=180x180`}
         alt="user"
-      />
+        />
       <h2>{props.user.name}</h2>
 
       <div className="button-flex">
@@ -33,6 +38,14 @@ function Card(props) {
         <button onClick={increaseBerry}>+ 🍓</button>
       </div>
     </div>
+    <div className="card card-b">
+      <div>
+      <h2>{props.user.name}</h2>
+
+      </div>
+
+    </div>
+    </article>
   );
 }
 
