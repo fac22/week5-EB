@@ -22,23 +22,27 @@
 }
 
 .card-container:hover {
-  box-shadow: 0px 4px 4px 5px rgba(39, 229, 232, 0.5);
+  box-shadow: 0px 4px 4px 5px rgba(79, 25, 187, 0.5);
 
   transform: translateY(-3%);
+}
+
+.card {
+  position: absolute;
 }
 
 .card-a {
   /* display: none; */
   backface-visibility: hidden;
   z-index: 2;
-  position: absolute;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card-b {
   /* display: none; */
   backface-visibility: hidden;
   z-index: 5;
-  position: relative;
-  position: absolute;
   transform: rotateY(180deg);
   /* margin-top: -110%; */
 }
