@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Like ME!!!</h1>
+        <h1>Berry Good Friends</h1>
       </header>
       <main>
         <SelectCategory category={category}  setCategory={setCategory}/>
@@ -70,8 +70,11 @@ function App() {
               group.map((user) => {
                 return <Card key={user.id} user={user} category={category} />;
               })
-            ) : (
+              ) : (
+                <div>
+              <p>Make new friends and feed them berries i.e. "Berry Your Good Friends"</p>
               <p>PREPARE FOR SHOCK AND AWE.....AND 🍓🍓🍓🍓🍓!!!</p>
+              </div>
             )}
           </div>
         </section>

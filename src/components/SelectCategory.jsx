@@ -8,7 +8,7 @@ function SelectCategory(props) {
       props.setCategory(event.target.category.value);
     }}>
     <label htmlFor="category">
-      <p>Choose a users theme:</p>
+      <p>Choose your costume:</p>
       <select name="category" id="category">
         <option value="0">---</option>
         <option value="1">Robots</option>

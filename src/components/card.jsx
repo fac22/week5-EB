@@ -5,11 +5,11 @@ function Card(props) {
   const [berry, setBerry] = useState(0);
 
   useEffect(() => {
-    setBerry(JSON.parse(window.localStorage.getItem(`${props.user.id}`)));
+    setBerry(JSON.parse(window.localStorage.getItem(`${props.user.id}${props.category}`)));
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem(`${props.user.id}`, berry);
+    window.localStorage.setItem(`${props.user.id}${props.category}`, berry);
   }, [berry]);
 
   const increaseBerry = () => {
