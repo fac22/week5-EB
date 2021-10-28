@@ -37,6 +37,27 @@ The goal is to build an interactive game-like thing that uses data from an API.
 
 ## Findings
 
+### href in React
+
 - href are automatically relative to server (it thinks it's a sub-route). It's a big topic online!
   ` <p>My website is <a href={props.user.website}>{props.user.website}</a></p>`
 - This is also not a fix: `<p>My website is <a href="https://{props.user.website}">{props.user.website}</a></p>`
+
+### .querySelector or React state?
+
+```js
+// Old
+<button
+  onClick={(e) =>
+    document.querySelector('.card-container').classList.toggle('flipped')
+  }>
+  Surprise 😉
+</button>;
+
+// New
+const [flipped, setFlipped] = useState('');
+
+<article className={`card-container ${flipped}`}>
+  <button onClick={() => setFlipped('')}>Surprise 😉</button>
+</article>;
+```

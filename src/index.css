@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Lato&family=Oswald&family=Raleway:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 /* ----------------- FONT FAMILIES
 font-family: 'Inconsolata', monospace;
 font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif; 
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
 font-family: 'Rubik', sans-serif;
+
 */
 
 body {

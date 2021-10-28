@@ -3,8 +3,8 @@
 }
 
 .card-container {
-  height: 305.425px;
-
+  /* height: 305.425px; */
+  height: 50vh;
   background-color: aliceblue;
   margin: 2rem;
   padding: 0.5rem;
@@ -27,17 +27,21 @@
   transform: translateY(-3%);
 }
 
+h2 {
+  font-size: 1.2rem;
+}
+
 .card {
   position: absolute;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-a {
   /* display: none; */
   backface-visibility: hidden;
   z-index: 2;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .card-b {
   /* display: none; */
@@ -56,6 +60,16 @@
 
 img {
   z-index: 2;
+}
+
+.flip-btn {
+  font-family: 'Pacifico', cursive;
+
+  font-size: 1rem;
+
+  border: 1px solid rgb(170, 16, 88);
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(79, 25, 187, 0.5);
 }
 
 .button-flex {
