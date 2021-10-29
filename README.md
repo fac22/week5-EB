@@ -17,6 +17,13 @@ Co-authored-by: Barbara <77367593+0bubbles0@users.noreply.github.com>
 <https://learn.foundersandcoders.com/course/syllabus/apprenticeship/client-side-app/project/>
 The goal is to build an interactive game-like thing that uses data from an API.
 
+<p>🍓 Pick a costume for your group</p>
+<p>🍓 Feed berries to the cards you like, or take them away from
+  the cards you don't!</p>
+<p>🍓 With a rising berry score, each card reveals more
+  information about itself!</p>
+<p>🍓 Feed them enough berries and they become your friend 🤗</p>
+
 ## Criteria ✅
 
 - [x] Accept some user input (e.g. a username)

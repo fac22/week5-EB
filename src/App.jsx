@@ -33,10 +33,24 @@ function App() {
               })
             ) : (
               <div className="description">
-                <p>
+                {/* <p>
                   Make new friends and feed them berries i.e. "Berry Your Good
                   Friends"
-                </p>
+                </p> */}
+                <ul className="instructions center">
+                  <li>🍓 Pick a costume for your group</li>
+                  <li>🍓 
+                    Feed berries to the cards you like, or take them away from
+                    the cards you don't!
+                  </li>
+                  <li>🍓 
+                    With a rising berry score, each card reveals more
+                    information about itself!
+                  </li>
+                  <li>🍓 
+                    Feed them enough berries and they become your friend 🤗{' '}
+                  </li>
+                </ul>
                 <p>PREPARE FOR SHOCK AND AWE.....AND 🍓🍓🍓🍓🍓!!!</p>
               </div>
             )}
